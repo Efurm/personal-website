@@ -3,7 +3,19 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1>Heading 1</h1>
-    <p>Welcome to the home page</p>
+    <h1>My To Do List</h1>
+    <p>You have {{ ToDoList|length }} things on your to do list.</p>
+    <ul>
+    {% for task in ToDoList %}
+        <li>
+            {{ task.name }}
+            {% if task.completed %}
+                - Completed
+            {% else %}
+                - In Progress
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
