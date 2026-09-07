@@ -1,0 +1,6 @@
+Question 1. Choose one test from the provided suite and name it. In plain English, what does that test confirm about your site? Then name one thing your site could get wrong that this test would not catch.
+On line 27-30 there is a test that checks to see if both "In progress" and "Completed" are present as status labels. I would call this test the Status Test and it would not catch if there is another type of status label besides the two that it is looking for.
+
+
+Question 2. You built three pages that share one navigation bar. If you added a fourth link to your navigation, how many files would you edit? How many would you have edited if you had not used base.html, and why?
+If I added a fourth link I would have to edit 3 files which would be the pages/url.py file, the base.html file, and the file for the new template itself. If I had not used the base.html file, I would have had to have edited the url file as well as all of the template files because as stated in lesson 4, any changes to the navigation requires changes to all the files in order to make sure that a error does not occur.
