@@ -1,8 +1,6 @@
-<html>
-<head>
-    <title>Home Page</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
     <h1>My To Do List</h1>
     <p>You have {{ ToDoList|length }} things on your to do list.</p>
     <ul>
@@ -17,5 +15,4 @@
         </li>
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock content %}
